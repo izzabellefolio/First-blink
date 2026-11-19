@@ -73,8 +73,8 @@
       "type": "psu",
       "props": {
         "output": true,
-        "voltage": 5,
-        "limit": 0.7
+        "voltage": 7.4,
+        "limit": 2
       },
       "x": -300,
       "y": -200,
@@ -126,34 +126,6 @@
     }
   ],
   "wires": [
-    {
-      "id": "w1",
-      "from": "psu1:V-",
-      "to": "bb1:tn2",
-      "color": "#7a8290",
-      "bends": [
-        {
-          "x": -80,
-          "y": 80
-        },
-        {
-          "x": 60,
-          "y": 80
-        }
-      ]
-    },
-    {
-      "id": "w2",
-      "from": "psu1:V+",
-      "to": "bb1:tp1",
-      "color": "#e14b4b",
-      "bends": [
-        {
-          "x": -120,
-          "y": 20
-        }
-      ]
-    },
     {
       "id": "w3",
       "from": "bb1:tn1",
@@ -267,66 +239,6 @@
         {
           "x": 580,
           "y": 340
-        }
-      ]
-    },
-    {
-      "id": "w11",
-      "from": "lm25962:OUT+",
-      "to": "chassis2wd1:R+",
-      "color": "#e14b4b",
-      "bends": [
-        {
-          "x": 480,
-          "y": -200
-        },
-        {
-          "x": 480,
-          "y": -260
-        }
-      ]
-    },
-    {
-      "id": "w12",
-      "from": "lm25962:OUT-",
-      "to": "chassis2wd1:R-",
-      "color": "#7a8290",
-      "bends": [
-        {
-          "x": 520,
-          "y": -160
-        },
-        {
-          "x": 520,
-          "y": -240
-        }
-      ]
-    },
-    {
-      "id": "w13",
-      "from": "lm25961:OUT+",
-      "to": "chassis2wd1:L+",
-      "color": "#e14b4b",
-      "bends": [
-        {
-          "x": 560,
-          "y": -360
-        },
-        {
-          "x": 560,
-          "y": -340
-        }
-      ]
-    },
-    {
-      "id": "w14",
-      "from": "lm25961:OUT-",
-      "to": "chassis2wd1:L-",
-      "color": "#7a8290",
-      "bends": [
-        {
-          "x": 540,
-          "y": -320
         }
       ]
     },
@@ -541,6 +453,272 @@
           "y": 340
         }
       ]
+    },
+    {
+      "id": "w200",
+      "from": "bb1:j4",
+      "to": "bb1:tn3",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w201",
+      "from": "bb1:j5",
+      "to": "bb1:tn4",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w202",
+      "from": "bb1:j7",
+      "to": "bb1:tn5",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w203",
+      "from": "bb1:j8",
+      "to": "bb1:tn6",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w204",
+      "from": "bb1:j14",
+      "to": "bb1:tn11",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w205",
+      "from": "bb1:j15",
+      "to": "bb1:tn12",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w206",
+      "from": "bb1:j17",
+      "to": "bb1:tn14",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w207",
+      "from": "bb1:j18",
+      "to": "bb1:tn15",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w208",
+      "from": "bb1:j24",
+      "to": "bb1:tn20",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w209",
+      "from": "bb1:j26",
+      "to": "bb1:tn21",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w210",
+      "from": "bb1:j28",
+      "to": "bb1:tn23",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w211",
+      "from": "bb1:a27",
+      "to": "bb1:bn22",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w212",
+      "from": "psu1:V+",
+      "to": "lm25961:IN+",
+      "color": "#e14b4b",
+      "bends": []
+    },
+    {
+      "id": "w213",
+      "from": "lm25961:IN+",
+      "to": "lm25962:IN+",
+      "color": "#e14b4b",
+      "bends": []
+    },
+    {
+      "id": "w214",
+      "from": "psu1:V-",
+      "to": "lm25961:IN-",
+      "color": "#7a8290",
+      "bends": []
+    },
+    {
+      "id": "w215",
+      "from": "lm25961:IN-",
+      "to": "lm25962:IN-",
+      "color": "#7a8290",
+      "bends": []
+    },
+    {
+      "id": "w216",
+      "from": "lm25961:IN-",
+      "to": "bb1:tn48",
+      "color": "#7a8290",
+      "bends": []
+    },
+    {
+      "id": "w217",
+      "from": "lm25961:OUT+",
+      "to": "bb1:tp1",
+      "color": "#e14b4b",
+      "bends": []
+    },
+    {
+      "id": "w218",
+      "from": "lm25961:OUT-",
+      "to": "bb1:tn2",
+      "color": "#7a8290",
+      "bends": []
+    },
+    {
+      "id": "w219",
+      "from": "lm25962:OUT+",
+      "to": "bb1:a40",
+      "color": "#e14b4b",
+      "bends": []
+    },
+    {
+      "id": "w220",
+      "from": "lm25962:OUT-",
+      "to": "bb1:bn33",
+      "color": "#7a8290",
+      "bends": []
+    },
+    {
+      "id": "w221",
+      "from": "bb1:j33",
+      "to": "bb1:tp27",
+      "color": "#e14b4b",
+      "bends": []
+    },
+    {
+      "id": "w222",
+      "from": "bb1:j40",
+      "to": "bb1:tp33",
+      "color": "#e14b4b",
+      "bends": []
+    },
+    {
+      "id": "w223",
+      "from": "bb1:a33",
+      "to": "bb1:bp27",
+      "color": "#e14b4b",
+      "bends": []
+    },
+    {
+      "id": "w224",
+      "from": "bb1:j36",
+      "to": "bb1:tn30",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w225",
+      "from": "bb1:j37",
+      "to": "bb1:tn31",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w226",
+      "from": "bb1:a36",
+      "to": "bb1:bn30",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w227",
+      "from": "bb1:a37",
+      "to": "bb1:bn31",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w228",
+      "from": "bb1:a39",
+      "to": "bb1:bn32",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w229",
+      "from": "bb1:j34",
+      "to": "bb1:tn28",
+      "color": "#2f6fed",
+      "bends": []
+    },
+    {
+      "id": "w230",
+      "from": "bb1:c44",
+      "to": "bb1:d34",
+      "color": "#e8a33d",
+      "bends": []
+    },
+    {
+      "id": "w231",
+      "from": "bb1:a45",
+      "to": "bb1:j39",
+      "color": "#8a5cf5",
+      "bends": []
+    },
+    {
+      "id": "w232",
+      "from": "bb1:a35",
+      "to": "chassis2wd1:L+",
+      "color": "#e14b4b",
+      "bends": []
+    },
+    {
+      "id": "w233",
+      "from": "bb1:a38",
+      "to": "chassis2wd1:L-",
+      "color": "#7a8290",
+      "bends": []
+    },
+    {
+      "id": "w234",
+      "from": "bb1:j38",
+      "to": "chassis2wd1:R+",
+      "color": "#e14b4b",
+      "bends": []
+    },
+    {
+      "id": "w235",
+      "from": "bb1:j35",
+      "to": "chassis2wd1:R-",
+      "color": "#7a8290",
+      "bends": []
+    },
+    {
+      "id": "w236",
+      "from": "chassis2wd1:VCC",
+      "to": "bb1:tp41",
+      "color": "#e14b4b",
+      "bends": []
+    },
+    {
+      "id": "w237",
+      "from": "chassis2wd1:GND",
+      "to": "bb1:tn41",
+      "color": "#7a8290",
+      "bends": []
     }
   ],
   "projects": {
