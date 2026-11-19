@@ -48,7 +48,7 @@
       "id": "u1",
       "type": "74hc08",
       "props": {},
-      "x": 40,
+      "x": 240,
       "y": 140,
       "rot": 0
     },
@@ -56,7 +56,7 @@
       "id": "u2",
       "type": "74hc32",
       "props": {},
-      "x": 240,
+      "x": 440,
       "y": 140,
       "rot": 0
     },
@@ -64,7 +64,7 @@
       "id": "u3",
       "type": "74hc04",
       "props": {},
-      "x": 440,
+      "x": 40,
       "y": 140,
       "rot": 0
     },
@@ -123,6 +123,24 @@
       "x": 1040,
       "y": 260,
       "rot": 0
+    },
+    {
+      "id": "gnd1",
+      "type": "gnd",
+      "props": {},
+      "x": 1180,
+      "y": 40,
+      "rot": 0
+    },
+    {
+      "id": "vcc1",
+      "type": "vcc",
+      "props": {
+        "voltage": 5
+      },
+      "x": 1180,
+      "y": -20,
+      "rot": 0
     }
   ],
   "wires": [
@@ -160,87 +178,39 @@
     },
     {
       "id": "w5",
-      "from": "bb1:j3",
-      "to": "bb1:tp3",
-      "color": "#e14b4b",
-      "bends": [
-        {
-          "x": 60,
-          "y": 60
-        },
-        {
-          "x": 80,
-          "y": 60
-        }
-      ]
+      "from": "bb1:j13",
+      "to": "bb1:tp11",
+      "color": "#e14b4b"
     },
     {
       "id": "w6",
-      "from": "bb1:a9",
-      "to": "bb1:bn7",
-      "color": "#2f6fed",
-      "bends": [
-        {
-          "x": 180,
-          "y": 340
-        }
-      ]
+      "from": "bb1:a19",
+      "to": "bb1:bn15",
+      "color": "#2f6fed"
     },
     {
       "id": "w7",
-      "from": "bb1:j13",
-      "to": "bb1:tp10",
-      "color": "#e14b4b",
-      "bends": [
-        {
-          "x": 260,
-          "y": 60
-        },
-        {
-          "x": 240,
-          "y": 60
-        }
-      ]
+      "from": "bb1:j23",
+      "to": "bb1:tp20",
+      "color": "#e14b4b"
     },
     {
       "id": "w8",
-      "from": "bb1:a19",
-      "to": "bb1:bn16",
-      "color": "#2f6fed",
-      "bends": [
-        {
-          "x": 380,
-          "y": 400
-        },
-        {
-          "x": 400,
-          "y": 400
-        }
-      ]
+      "from": "bb1:a29",
+      "to": "bb1:bn25",
+      "color": "#2f6fed"
     },
     {
       "id": "w9",
-      "from": "bb1:j23",
-      "to": "bb1:tp19",
-      "color": "#e14b4b",
-      "bends": [
-        {
-          "x": 460,
-          "y": 60
-        }
-      ]
+      "from": "bb1:j3",
+      "to": "bb1:tp3",
+      "color": "#e14b4b"
     },
     {
       "id": "w10",
-      "from": "bb1:a29",
-      "to": "bb1:bn24",
-      "color": "#2f6fed",
-      "bends": [
-        {
-          "x": 580,
-          "y": 340
-        }
-      ]
+      "from": "bb1:a9",
+      "to": "bb1:bn7",
+      "color": "#2f6fed"
     },
     {
       "id": "w18",
@@ -292,433 +262,303 @@
     },
     {
       "id": "w15",
-      "from": "bb1:c23",
-      "to": "bb1:c17",
-      "color": "#d94f9c",
-      "bends": [
-        {
-          "x": 400,
-          "y": 260
-        }
-      ]
+      "from": "bb1:c3",
+      "to": "bb1:c27",
+      "color": "#d94f9c"
     },
     {
       "id": "w21",
-      "from": "bb1:d24",
-      "to": "bb1:d3",
-      "color": "#e14b4b",
-      "bends": [
-        {
-          "x": 480,
-          "y": 380
-        },
-        {
-          "x": 60,
-          "y": 380
-        }
-      ]
+      "from": "bb1:d4",
+      "to": "bb1:d13",
+      "color": "#e14b4b"
     },
     {
       "id": "w22",
-      "from": "bb1:d4",
-      "to": "bb1:d6",
-      "color": "#20b2c6",
-      "bends": [
-        {
-          "x": 100,
-          "y": 240
-        }
-      ]
+      "from": "bb1:d14",
+      "to": "bb1:d16",
+      "color": "#20b2c6"
     },
     {
       "id": "w24",
-      "from": "bb1:a26",
-      "to": "bb1:a7",
-      "color": "#1f9d55",
-      "bends": [
-        {
-          "x": 520,
-          "y": 320
-        },
-        {
-          "x": 140,
-          "y": 320
-        }
-      ]
+      "from": "bb1:a6",
+      "to": "bb1:a17",
+      "color": "#1f9d55"
     },
     {
       "id": "w25",
-      "from": "bb1:d5",
-      "to": "bb1:d13",
-      "color": "#e8a33d",
-      "bends": [
-        {
-          "x": 100,
-          "y": 420
-        },
-        {
-          "x": 260,
-          "y": 420
-        }
-      ]
+      "from": "bb1:d15",
+      "to": "bb1:d23",
+      "color": "#e8a33d"
     },
     {
       "id": "w28",
-      "from": "bb1:d8",
-      "to": "bb1:c16",
-      "color": "#8a5cf5",
-      "bends": [
-        {
-          "x": 160,
-          "y": 260
-        }
-      ]
+      "from": "bb1:d18",
+      "to": "bb1:c26",
+      "color": "#8a5cf5"
     },
     {
       "id": "w30",
-      "from": "bb1:d15",
+      "from": "bb1:d25",
       "to": "bb1:d44",
-      "color": "#e14b4b",
-      "bends": [
-        {
-          "x": 600,
-          "y": 240
-        }
-      ]
+      "color": "#e14b4b"
     },
     {
       "id": "w31",
-      "from": "bb1:c18",
+      "from": "bb1:c28",
       "to": "bb1:b45",
-      "color": "#1f9d55",
-      "bends": [
-        {
-          "x": 360,
-          "y": 440
-        },
-        {
-          "x": 900,
-          "y": 440
-        }
-      ]
+      "color": "#1f9d55"
     },
     {
       "id": "w16",
-      "from": "bb1:b14",
-      "to": "bb1:b25",
-      "color": "#e8a33d",
-      "bends": [
-        {
-          "x": 400,
-          "y": 280
-        }
-      ]
+      "from": "bb1:b24",
+      "to": "bb1:b5",
+      "color": "#e8a33d"
     },
     {
       "id": "w23",
-      "from": "bb1:a23",
-      "to": "bb1:bn19",
-      "color": "#e14b4b",
-      "bends": [
-        {
-          "x": 460,
-          "y": 340
-        }
-      ]
+      "from": "bb1:a3",
+      "to": "bb1:bn2",
+      "color": "#e14b4b"
     },
     {
       "id": "w26",
-      "from": "bb1:a25",
-      "to": "bb1:bp22",
-      "color": "#1f9d55",
-      "bends": [
-        {
-          "x": 500,
-          "y": 480
-        },
-        {
-          "x": 540,
-          "y": 480
-        }
-      ]
+      "from": "bb1:a5",
+      "to": "bb1:bp4",
+      "color": "#1f9d55"
     },
     {
       "id": "w27",
-      "from": "bb1:a4",
-      "to": "bb1:bn3",
-      "color": "#d94f9c",
-      "bends": [
-        {
-          "x": 80,
-          "y": 340
-        }
-      ]
+      "from": "bb1:a14",
+      "to": "bb1:bn11",
+      "color": "#d94f9c"
     },
     {
       "id": "w200",
-      "from": "bb1:j4",
-      "to": "bb1:tn3",
-      "color": "#2f6fed",
-      "bends": []
+      "from": "bb1:j14",
+      "to": "bb1:tn10",
+      "color": "#2f6fed"
     },
     {
       "id": "w201",
-      "from": "bb1:j5",
-      "to": "bb1:tn4",
-      "color": "#2f6fed",
-      "bends": []
+      "from": "bb1:j15",
+      "to": "bb1:tn13",
+      "color": "#2f6fed"
     },
     {
       "id": "w202",
-      "from": "bb1:j7",
-      "to": "bb1:tn5",
-      "color": "#2f6fed",
-      "bends": []
+      "from": "bb1:j17",
+      "to": "bb1:tn16",
+      "color": "#2f6fed"
     },
     {
       "id": "w203",
-      "from": "bb1:j8",
-      "to": "bb1:tn6",
-      "color": "#2f6fed",
-      "bends": []
+      "from": "bb1:j18",
+      "to": "bb1:tn17",
+      "color": "#2f6fed"
     },
     {
       "id": "w204",
-      "from": "bb1:j14",
-      "to": "bb1:tn11",
-      "color": "#2f6fed",
-      "bends": []
+      "from": "bb1:j24",
+      "to": "bb1:tn19",
+      "color": "#2f6fed"
     },
     {
       "id": "w205",
-      "from": "bb1:j15",
-      "to": "bb1:tn12",
-      "color": "#2f6fed",
-      "bends": []
+      "from": "bb1:j25",
+      "to": "bb1:tn22",
+      "color": "#2f6fed"
     },
     {
       "id": "w206",
-      "from": "bb1:j17",
-      "to": "bb1:tn14",
-      "color": "#2f6fed",
-      "bends": []
+      "from": "bb1:j27",
+      "to": "bb1:tn24",
+      "color": "#2f6fed"
     },
     {
       "id": "w207",
-      "from": "bb1:j18",
-      "to": "bb1:tn15",
-      "color": "#2f6fed",
-      "bends": []
+      "from": "bb1:j28",
+      "to": "bb1:tn25",
+      "color": "#2f6fed"
     },
     {
       "id": "w208",
-      "from": "bb1:j24",
-      "to": "bb1:tn20",
-      "color": "#2f6fed",
-      "bends": []
+      "from": "bb1:j4",
+      "to": "bb1:tn3",
+      "color": "#2f6fed"
     },
     {
       "id": "w209",
-      "from": "bb1:j26",
-      "to": "bb1:tn21",
-      "color": "#2f6fed",
-      "bends": []
+      "from": "bb1:j6",
+      "to": "bb1:tn5",
+      "color": "#2f6fed"
     },
     {
       "id": "w210",
-      "from": "bb1:j28",
-      "to": "bb1:tn23",
-      "color": "#2f6fed",
-      "bends": []
+      "from": "bb1:j8",
+      "to": "bb1:tn6",
+      "color": "#2f6fed"
     },
     {
       "id": "w211",
-      "from": "bb1:a27",
-      "to": "bb1:bn22",
-      "color": "#2f6fed",
-      "bends": []
+      "from": "bb1:a7",
+      "to": "bb1:bn5",
+      "color": "#2f6fed"
     },
     {
       "id": "w212",
       "from": "psu1:V+",
       "to": "lm25961:IN+",
-      "color": "#e14b4b",
-      "bends": []
+      "color": "#e14b4b"
     },
     {
       "id": "w213",
       "from": "lm25961:IN+",
       "to": "lm25962:IN+",
-      "color": "#e14b4b",
-      "bends": []
+      "color": "#e14b4b"
     },
     {
       "id": "w214",
       "from": "psu1:V-",
       "to": "lm25961:IN-",
-      "color": "#7a8290",
-      "bends": []
+      "color": "#7a8290"
     },
     {
       "id": "w215",
       "from": "lm25961:IN-",
       "to": "lm25962:IN-",
-      "color": "#7a8290",
-      "bends": []
+      "color": "#7a8290"
     },
     {
       "id": "w216",
       "from": "lm25961:IN-",
       "to": "bb1:tn48",
-      "color": "#7a8290",
-      "bends": []
+      "color": "#7a8290"
     },
     {
       "id": "w217",
       "from": "lm25961:OUT+",
       "to": "bb1:tp1",
-      "color": "#e14b4b",
-      "bends": []
+      "color": "#e14b4b"
     },
     {
       "id": "w218",
       "from": "lm25961:OUT-",
       "to": "bb1:tn2",
-      "color": "#7a8290",
-      "bends": []
+      "color": "#7a8290"
     },
     {
       "id": "w219",
       "from": "lm25962:OUT+",
       "to": "bb1:a40",
-      "color": "#e14b4b",
-      "bends": []
+      "color": "#e14b4b"
     },
     {
       "id": "w220",
       "from": "lm25962:OUT-",
       "to": "bb1:bn33",
-      "color": "#7a8290",
-      "bends": []
+      "color": "#7a8290"
     },
     {
       "id": "w221",
       "from": "bb1:j33",
       "to": "bb1:tp27",
-      "color": "#e14b4b",
-      "bends": []
+      "color": "#e14b4b"
     },
     {
       "id": "w222",
       "from": "bb1:j40",
       "to": "bb1:tp33",
-      "color": "#e14b4b",
-      "bends": []
+      "color": "#e14b4b"
     },
     {
       "id": "w223",
       "from": "bb1:a33",
       "to": "bb1:bp27",
-      "color": "#e14b4b",
-      "bends": []
+      "color": "#e14b4b"
     },
     {
       "id": "w224",
       "from": "bb1:j36",
       "to": "bb1:tn30",
-      "color": "#2f6fed",
-      "bends": []
+      "color": "#2f6fed"
     },
     {
       "id": "w225",
       "from": "bb1:j37",
       "to": "bb1:tn31",
-      "color": "#2f6fed",
-      "bends": []
+      "color": "#2f6fed"
     },
     {
       "id": "w226",
       "from": "bb1:a36",
       "to": "bb1:bn30",
-      "color": "#2f6fed",
-      "bends": []
+      "color": "#2f6fed"
     },
     {
       "id": "w227",
       "from": "bb1:a37",
       "to": "bb1:bn31",
-      "color": "#2f6fed",
-      "bends": []
+      "color": "#2f6fed"
     },
     {
       "id": "w228",
       "from": "bb1:a39",
       "to": "bb1:bn32",
-      "color": "#2f6fed",
-      "bends": []
+      "color": "#2f6fed"
     },
     {
       "id": "w229",
       "from": "bb1:j34",
       "to": "bb1:tn28",
-      "color": "#2f6fed",
-      "bends": []
+      "color": "#2f6fed"
     },
     {
       "id": "w230",
       "from": "bb1:c44",
       "to": "bb1:d34",
-      "color": "#e8a33d",
-      "bends": []
+      "color": "#e8a33d"
     },
     {
       "id": "w231",
       "from": "bb1:a45",
       "to": "bb1:j39",
-      "color": "#8a5cf5",
-      "bends": []
+      "color": "#8a5cf5"
     },
     {
       "id": "w232",
       "from": "bb1:a35",
       "to": "chassis2wd1:L+",
-      "color": "#e14b4b",
-      "bends": []
+      "color": "#e14b4b"
     },
     {
       "id": "w233",
       "from": "bb1:a38",
       "to": "chassis2wd1:L-",
-      "color": "#7a8290",
-      "bends": []
+      "color": "#7a8290"
     },
     {
       "id": "w234",
       "from": "bb1:j38",
       "to": "chassis2wd1:R+",
-      "color": "#e14b4b",
-      "bends": []
+      "color": "#e14b4b"
     },
     {
       "id": "w235",
       "from": "bb1:j35",
       "to": "chassis2wd1:R-",
-      "color": "#7a8290",
-      "bends": []
+      "color": "#7a8290"
     },
     {
       "id": "w236",
       "from": "chassis2wd1:VCC",
       "to": "bb1:tp41",
-      "color": "#e14b4b",
-      "bends": []
+      "color": "#e14b4b"
     },
     {
       "id": "w237",
       "from": "chassis2wd1:GND",
       "to": "bb1:tn41",
-      "color": "#7a8290",
-      "bends": []
+      "color": "#7a8290"
     }
   ],
   "projects": {
